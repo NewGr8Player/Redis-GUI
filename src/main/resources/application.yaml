@@ -1,0 +1,8 @@
+spring:
+    jmx: 
+        enabled: false
+        
+javafx:
+    title: "Redis - GUI By Xavier"
+    stage:
+        resizable: true
