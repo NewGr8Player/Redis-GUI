@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xavier.controller.LoginController">
+   <children>
+      <BorderPane layoutX="7.0" layoutY="6.0" prefHeight="286.0" prefWidth="146.0">
+         <center>
+            <Pane prefHeight="300.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="30.0" layoutY="37.0" text="地址：" />
+                  <Label layoutX="30.0" layoutY="67.0" text="账号：" />
+                  <Label layoutX="30.0" layoutY="97.0" text="密码：" />
+                  <Label layoutX="30.0" layoutY="127.0" text="端口：" />
+                  <TextField fx:id="host" layoutX="76.0" layoutY="33.0" />
+                  <TextField fx:id="account" layoutX="76.0" layoutY="63.0" />
+                  <TextField fx:id="password" layoutX="76.0" layoutY="93.0" promptText="可空" />
+                  <TextField fx:id="port" layoutX="76.0" layoutY="123.0" promptText="6379" text="6379" />
+                  <Button layoutX="225.0" layoutY="179.0" mnemonicParsing="false" text="测试" />
+                  <Button layoutX="280.0" layoutY="179.0" mnemonicParsing="false" text="保存" />
+                  <Button layoutX="335.0" layoutY="179.0" mnemonicParsing="false" onAction="#confirmBtn" text="确定" />
+               </children>
+            </Pane>
+         </center>
+         <left>
+            <Pane prefHeight="300.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ListView layoutX="10.0" layoutY="7.0" prefHeight="200.0" prefWidth="126.0" />
+               </children>
+            </Pane>
+         </left></BorderPane>
+   </children>
+</Pane>
